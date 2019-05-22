@@ -1,1 +1,1 @@
-# Interactive_Projection
+# MicroVision Interactive Projection & IoT Products
