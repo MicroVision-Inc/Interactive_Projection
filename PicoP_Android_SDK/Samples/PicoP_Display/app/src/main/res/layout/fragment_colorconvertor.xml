@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_colorconvertorselect_color_tv"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:text="Select Color:" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/group_one"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/fragment_colorconvertorcolor_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:text="eRED_TO_RED"/>
+                <RadioButton android:id="@+id/fragment_colorconvertorcolor_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="eGREEN_TO_GREEN"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/group_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/fragment_colorconvertorcolor_red_to_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="eRED_TO_GREEN"/>
+                <RadioButton android:id="@+id/fragment_colorconvertorcolor_green_to_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="eGREEN_TO_RED          "/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/group_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/fragment_colorconvertorcolor_red_to_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="eRED_TO_BLUE"/>
+                <RadioButton android:id="@+id/fragment_colorconvertorcolor_green_to_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="eGREEN_TO_BLUE     "/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/group_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/fragment_colorconvertorcolor_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="eBLUE_TO_BLUE"/>
+
+                <RadioButton android:id="@+id/fragment_colorconvertorcolor_blue_to_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="eBLUE_TO_GREEN       "/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/group_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/fragment_colorconvertorcolor_blue_to_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="eBLUE_TO_RED"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fragment_colorconvertortv_title_set"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:text="Color Coefficient:" />
+
+            <TextView
+                android:id="@+id/fragment_colorconvertortv_set_curr_value"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:text=" 0"
+                android:textColor="#06a7fa" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:gravity="bottom"
+                android:text="-65536"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_parent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <SeekBar
+                    android:id="@+id/fragment_colorconvertorseekbar_colorconvertor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:maxHeight="4dp"
+                    android:minHeight="4dp"
+                    android:progressDrawable="@drawable/seek_bar_progress_bg"
+                    android:thumb="@drawable/thumb_icon" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fragment_colorconvertortv_max"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:gravity="bottom"
+                android:text="65535"
+                android:textColor="#000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox_commit_colorconvertor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Commit "
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fragment_colorconvertorbtn_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set color convertor"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/fragment_colorconvertorset_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="66dp"
+                android:text="Set result"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fragment_colorconvertortv_title_get"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="5"
+                android:text="Get colorconvertor"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fragment_colorconvertorbtn_get_current"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="current"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/fragment_colorconvertortv_get_current"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="66dp"
+                android:layout_weight="1"
+                android:text="Text String"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fragment_colorconvertorbtn_get_startup"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="startup"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/fragment_colorconvertortv_get_startup"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="66dp"
+                android:layout_weight="1"
+                android:text="Test String"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fragment_colorconvertorbtn_get_factory"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="factory"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/fragment_colorconvertortv_get_factory"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="66dp"
+                android:layout_weight="1"
+                android:text="Test String"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

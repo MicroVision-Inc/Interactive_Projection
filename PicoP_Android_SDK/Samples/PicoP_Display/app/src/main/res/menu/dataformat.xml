@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/data_fuseddepthampl"
+        android:autoSizeTextType="uniform"
+        android:title="FUSED_DEPTH_FUSED_AMPL "
+        android:textSize ="12sp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/data_leftfuseddepthampl"
+        app:showAsAction="never"
+        android:autoSizeTextType="uniform"
+        android:textSize ="12sp"
+        android:title="LEFT_DEPTH_LEFT_AMPL" />
+    <item
+        android:id="@+id/data_rightfuseddepthampl"
+        app:showAsAction="never"
+        android:autoSizeTextType="uniform"
+        android:textSize ="12sp"
+        android:title="RIGHT_DEPTH_RIGHT_AMPL" />
+    <item
+        android:id="@+id/data_leftrightfuseddepth"
+        app:showAsAction="never"
+        android:autoSizeTextType="uniform"
+        android:textSize ="12sp"
+        android:title="LEFT_DEPTH_RIGHT_DEPTH" />
+    <item
+        android:id="@+id/data_leftrightfusedampl"
+        app:showAsAction="never"
+        android:autoSizeTextType="uniform"
+        android:textSize ="12sp"
+        android:title="LEFT_AMPL_RIGHT_AMPL" />
+
+</menu>

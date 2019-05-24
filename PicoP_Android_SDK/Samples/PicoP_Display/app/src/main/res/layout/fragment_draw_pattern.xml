@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:pikolo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mvis.apps.fragment.DrawPattern">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RadioGroup
+                android:id="@+id/radio_group_pattern_picker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_btn_pattern_off"
+                    style="@style/RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Test Patterns Off" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_checker_pattern"
+                    style="@style/RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Checkerboard pattern" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_cross_hair"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" Cross Hair Pattern" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_grid_pattern"
+                    style="@style/RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bordered Grid Pattern" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_const_color"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Constant Color Pattern" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_draw_test_pattern"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Draw" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

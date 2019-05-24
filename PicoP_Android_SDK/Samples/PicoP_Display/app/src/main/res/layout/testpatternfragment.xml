@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/mTogBtnTestptn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:button="@drawable/toggle_btn"
+                android:checked="true"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/mRadioGroupTestptn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Function">
+
+                <RadioButton
+                    android:id="@+id/radiobutton_checkerboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="CheckerBoard"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radiobutton_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grid"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radiobutton_crosshair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CrossHair">
+
+                </RadioButton>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_fg"
+                android:layout_width="150dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape_cart"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview_fg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ForeGround Color"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_bg"
+                android:layout_width="150dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape_cart"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BackGround Color"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

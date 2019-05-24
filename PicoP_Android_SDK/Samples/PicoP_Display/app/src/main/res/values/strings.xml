@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PicoP_Display</string>
+    <string name="action_search">search</string>
+    <string name="action_refresh">refresh</string>
+    <string name="action_share">share</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="drawe_open">Open navigation drawer</string>
+    <string name="drawe_close">Close navigation drawer</string>
+    <string name="checker_board_pattern">Checker Board Pattern</string>
+
+</resources>

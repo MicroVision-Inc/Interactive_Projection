@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>BiPhase</item>
+        <item>Brightness</item>
+        <item>ColorAlignment</item>
+        <item>ColorConvertor</item>
+        <item>ColorMode</item>
+        <item>DrawPattern</item>
+        <item>EventLog</item>
+        <item>FlipState</item>
+        <item>FrameRate</item>
+        <item>GammaBoost</item>
+        <item>GammaVal</item>
+        <item>InputVideoState</item>
+        <item>InputVideoProperties</item>
+        <item>MicroweaveMode</item>
+        <item>OutputVideoState</item>
+        <item>OutputVideoProperties</item>
+        <item>SensingState</item>
+        <item>System</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+        <item>@drawable/ic_drawer</item>
+    </array>
+</resources>

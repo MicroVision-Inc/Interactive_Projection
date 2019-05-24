@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragment_colormode_tv_title_set"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:text="Select FilpState:" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/fragment_flip_neither"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="eFLIP_NEITHER"/>
+            <RadioButton android:id="@+id/fragment_flip_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="eFLIP_HORIZONTAL"/>
+            <RadioButton android:id="@+id/fragment_flip_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="eFLIP_VERTICAL"/>
+            <RadioButton android:id="@+id/fragment_flip_both"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="eFLIP_BOTH"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox_commit_flip_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Commit "
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dip">
+
+        <Button
+            android:id="@+id/fragment_set_flip_state_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Flip State"
+            android:textSize="16dp"/>>
+        <TextView
+            android:id="@+id/fragment_set_flip_state_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="66dp"
+            android:text="Set Flip state result"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fragment_flip_state_btn_get_current"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Current"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/fragment_flip_state_tv_get_current"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="66dp"
+            android:layout_weight="1"
+            android:text="Text String"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fragment_flip_state_btn_get_startup"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Startup"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/fragment_flip_state_tv_get_startup"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="66dp"
+            android:layout_weight="1"
+            android:text="Test String"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fragment_flip_state_btn_get_factory"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Factory"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/fragment_flip_state_tv_get_factory"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="66dp"
+            android:layout_weight="1"
+            android:text="Test String"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

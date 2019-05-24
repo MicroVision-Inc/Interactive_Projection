@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="VideoStartPosition" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x:" />
+
+        <EditText
+            android:id="@+id/etx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="please input x:(0~1280)"
+            android:inputType="number"
+            android:maxLength="4" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:text="y:" />
+
+        <EditText
+            android:id="@+id/ety"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="please input y:(0~720)"
+            android:inputType="number"
+            android:maxLength="3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="resolution" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="w:" />
+
+        <EditText
+            android:id="@+id/etw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="please input w:(0~1280)"
+            android:inputType="number"
+            android:maxLength="4" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:text="h:" />
+
+        <EditText
+            android:id="@+id/eth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="please input h:(0~720)"
+            android:inputType="number"
+            android:maxLength="3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pixelAspectRatio:" />
+
+        <TextView
+            android:id="@+id/fragment_tv_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="0.8f" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/fragment_par_seekbar"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:maxHeight="4dp"
+            android:minHeight="4dp" />
+
+        <TextView
+            android:id="@+id/fragment_tv_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.2f" />
+
+        <TextView
+            android:id="@+id/fragment_aspectratio_tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="hSyncPolarity:   " />
+
+        <Button
+            android:id="@+id/fragment_hSyncPolarity_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="hSyncPolarity:"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="vSyncPolarity:" />
+
+        <Button
+            android:id="@+id/fragment_vSyncPolarity_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="vSyncPolarity"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="pixelClockEdge:" />
+
+        <Button
+            android:id="@+id/fragment_pixelClockEdge_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="pixelClockEdge"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Video mode:   " />
+
+        <Button
+            android:id="@+id/fragment_capturemode_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Video mode"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ColorSpace" />
+
+        <Button
+            android:id="@+id/fragment_colorSpace_btn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="olorSpace"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Interlace" />
+
+        <Button
+            android:id="@+id/fragment_interlace_btn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Interlace"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/fragment_setcaptureinfo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Capture Info"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/fragment_getcaptureinfo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="Get Capture Info"
+            android:textSize="12dp" />
+        <TextView
+            android:id="@+id/fragment_getcaptureinfo_tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+</LinearLayout>

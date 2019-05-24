@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/datainterface_usb"
+        android:title="DATA_INTERFACE_USB"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/datainterface_mipi"
+        app:showAsAction="never"
+        android:title="DATA_INTERFACE_MIPI" />
+    <item
+        android:id="@+id/datainterface_usb_mipi"
+        app:showAsAction="never"
+        android:title="DATA_INTERFACE_USB_MIPI" />
+
+</menu>
