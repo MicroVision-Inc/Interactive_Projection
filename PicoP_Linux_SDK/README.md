@@ -42,27 +42,26 @@ Each Linux platform requires the installation of the following packages :
 
 To build with the static library, explicity link with the libPicoP_Api.a library.
 
-There is no Advanced Packaging Tool (APT) package created for shared library installation. To evaluate the shared library, softlink creation is required to traverse the versions of the soname. For examample, if released version is libPicoP_ALC_Api.so.2.0.0 then create following softlinks in library path directory :
+There is no Advanced Packaging Tool (APT) package created for shared library installation. To evaluate the shared library, softlink creation is required to traverse the versions of the soname. For example, if released version is libPicoP_ALC_Api.so.1.3.0 then create following softlinks in library path directory :
 
 ```console
-$ sudo ln -sf libPicoP_Api.so.2.0.0 libPicoP_Api.so.2.0
-$ sudo ln -sf libPicoP_Api.so.2.0 libPicoP_Api.so.2
-$ sudo ln -sf libPicoP_Api.so.2 libPicoP_Api.so
+$ sudo ln -sf libPicoP_Api.so.1.3.0 libPicoP_Api.so.1.3
+$ sudo ln -sf libPicoP_Api.so.1.3 libPicoP_Api.so.1
+$ sudo ln -sf libPicoP_Api.so.1 libPicoP_Api.so
 ```
 
 See the PicoP Console demo makefile for and example of static and dynamic library usage.
 
 ## Demo Applications
 
-PicoP\_Linux\_SDK/samples/ contains 3 demo applications utilizing the PicoP SDK:
+PicoP\_Linux\_SDK/samples/ contains demo applications utilizing the PicoP SDK:
 
 - PicoP_Console
 - PicoP_Display
-- PicoP_Sensing
 
 To build any of these applications, open a shell and navigate to the application directory and execute "make". This will build the application using the static library.
 
-The library utilizes USB device node access for communication and video streaming. This requires running all demo applications under sudo access control or create udev rules to allow user space programs access to usb device nodes. There are several ways to create the udev rules, but one simple rule set which allows device node access to any user on the host is the following 2 lines :
+The library utilizes USB device node access for display communication. This requires running all demo applications under sudo access control or create udev rules to allow user space programs access to usb device nodes. There are several ways to create the udev rules, but one simple rule set which allows device node access to any user on the host is the following 2 lines :
 
 - SUBSYSTEMS=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="148a", ATTRS{idProduct}=="0004", MODE="0666"
 - SUBSYSTEMS=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="00f9", MODE="0666"
